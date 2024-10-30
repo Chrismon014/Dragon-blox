@@ -592,25 +592,19 @@ local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 30000,
-    planet = "Earth"
-}, {
-    name = "Klirin",
-    nickname = "Klirin",
-    requiredValue = 30001,
-    endRange = 60000,
+    endRange = 100000,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 60001,
-    endRange = 74800000000000000000000000000,
+    requiredValue = 100001,
+    endRange = 74800000000000000000000000000000000000,
     planet = "Earth"
 }, {
     name = "Kid Nohag)",
     nickname = "Kid Nohag",
-    requiredValue = 60001,
-    endRange = 2100000000000000000000,
+    requiredValue = 100001,
+    endRange = 210000000000000000000000000000000,
     planet = "Earth"
 }}
 
@@ -625,7 +619,7 @@ local function check1()
             local A_1 = "Vills Planet"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
-            tp = true
+            tp = false
             return tp
         else
             SelectedQuests = "SSJG Kakata"
@@ -643,7 +637,7 @@ local function check1()
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
-            task.wait(8)
+            task.wait(360)
         end
     end
 end)
