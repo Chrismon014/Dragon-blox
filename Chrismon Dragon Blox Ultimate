@@ -1030,12 +1030,12 @@ warn("line 1100 enter loop status status = " .. tostring(autoFarmLoopRunning))
     end
 
     if getgenv().rebirthed == true and game.placeId == 5151400895 then
-        task.wait(360)
+        task.wait(10)
 check1()
         return
 
     elseif getgenv().rebirthed == true and game.placeId ~= 5151400895 then
-        task.wait(360)
+        task.wait(3)
 check1()
     end
 
