@@ -643,7 +643,7 @@ local function check1()
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
-            task.wait(360)
+            task.wait(8)
         end
     end
 end)
@@ -1030,12 +1030,12 @@ warn("line 1100 enter loop status status = " .. tostring(autoFarmLoopRunning))
     end
 
     if getgenv().rebirthed == true and game.placeId == 5151400895 then
-        task.wait(10)
+        task.wait(360)
 check1()
         return
 
     elseif getgenv().rebirthed == true and game.placeId ~= 5151400895 then
-        task.wait(3)
+        task.wait(360)
 check1()
     end
 
