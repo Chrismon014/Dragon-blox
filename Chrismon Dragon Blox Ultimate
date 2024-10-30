@@ -625,7 +625,7 @@ local function check1()
             local A_1 = "Vills Planet"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
-            tp = false
+            tp = true
             return tp
         else
             SelectedQuests = "SSJG Kakata"
